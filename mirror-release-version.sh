@@ -13,5 +13,6 @@ wget "$download_url"
 chmod 555 $bin_name
 tar -czvf "sentry-cli_${version}.tar.gz" "$bin_name"
 /bin/rm $bin_name 
-git commit -a -m "Mirror version ${version}"
+git add .
+git commit -m "Mirror version ${version}"
 git push
